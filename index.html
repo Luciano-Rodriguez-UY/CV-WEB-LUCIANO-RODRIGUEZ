@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Currículum Vitae</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --primary:#0f172a;
+  --secondary:#1e293b;
+  --accent:#c9a34e;
+  --muted:#64748b;
+  --card:#ffffff;
+  --leftbg:#f1f5f9;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  background:linear-gradient(135deg,#0f172a,#1e293b);
+  font-family:"Inter",sans-serif;
+  padding:20px;
+}
+
+.cv-container{
+  max-width:1000px;
+  margin:auto;
+  background:var(--card);
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 25px 60px rgba(0,0,0,0.35);
+}
+
+/* HEADER */
+.cv-header{
+  background:linear-gradient(135deg,#0f172a,#1e293b);
+  color:white;
+  padding:30px 40px;
+  display:grid;
+  grid-template-columns:1fr auto;
+  align-items:center;
+  gap:20px;
+}
+
+.header-text h1{
+  font-family:"Playfair Display",serif;
+  font-size:2.2rem;
+}
+
+.header-text h2{
+  font-size:1.1rem;
+  font-weight:300;
+  margin-top:5px;
+  color:var(--accent);
+}
+
+/* FOTO */
+.header-photo{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  border:4px solid var(--accent);
+  overflow:hidden;
+  background:#1e293b;
+}
+
+.header-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* CUERPO */
+.cv-body{
+  display:grid;
+  grid-template-columns:1fr 2fr;
+}
+
+/* COLUMNA IZQUIERDA */
+.cv-left{
+  background:var(--leftbg);
+  padding:25px;
+}
+
+/* COLUMNA DERECHA */
+.cv-right{
+  padding:30px;
+}
+
+/* SECCIONES */
+.section{
+  margin-bottom:25px;
+}
+
+.section h3{
+  font-size:0.9rem;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  color:var(--secondary);
+  border-bottom:2px solid var(--accent);
+  padding-bottom:6px;
+  margin-bottom:12px;
+}
+
+/* TEXTOS */
+.info p,
+.item p{
+  font-size:0.9rem;
+  color:#334155;
+  margin-bottom:6px;
+}
+
+.item{
+  margin-bottom:18px;
+}
+
+.item h4{
+  color:var(--primary);
+  font-weight:600;
+}
+
+.item span{
+  font-size:0.8rem;
+  color:var(--muted);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .cv-header{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .header-photo{
+    margin:auto;
+  }
+
+  .cv-body{
+    grid-template-columns:1fr;
+  }
+   /* Cambia el orden en celular */
+  .cv-right{
+    order:1;
+  }
+
+  .cv-left{
+    order:2;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="cv-container">
+
+  <!-- HEADER -->
+  <div class="cv-header">
+    <div class="header-text">
+      <h1>Luciano Signorelli</h1>
+      <h2>Aspirante a Guardia de seguridad</h2>
+    </div>
+
+    <div class="header-photo">
+      <img src="IMAGES/LUCHO .jpeg" alt="Foto de perfil">
+    </div>
+  </div>
+
+  <!-- CUERPO -->
+  <div class="cv-body">
+
+    <!-- IZQUIERDA -->
+    <div class="cv-left">
+
+      <div class="section">
+        <h3>Contacto</h3>
+        <div class="info">
+          <p>📞 095964387</p>
+          <p>✉️LucianoSignorelliBusiness@gmail.com</p>
+          <p>📍 Uruguay</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Habilidades</h3>
+        <div class="info">
+          <p>• Trabajo en equipo</p>
+          <p>• Responsabilidad</p>
+          <p>• Organización</p>
+          <p>• Atención al cliente</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Idiomas</h3>
+        <div class="info">
+          <p>Español: Nativo</p>
+          <p>Inglés: Básico (A2-A3)</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Informática</h3>
+        <div class="info">
+          <p>Word, Excel</p>
+          <p>Internet y Redes</p>
+          <p>Manejo de Equipos electronicos</p>
+          <p>Diseño de planos 3D</p>
+          <p>Diseño con vectores (inkscape)</p>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- DERECHA -->
+    <div class="cv-right">
+
+      <!-- 1. EMPRESAS -->
+      <div class="section">
+        <h3>Experiencia Laboral</h3>
+        <div class="item">
+          <h4>Mantenimiento melo SRL</h4>
+          <span>Puesto – 2023 / 2025</span>
+          <p>
+            Mantenimiento y servicios en general, encargado en ciertas obras, mucho aprendizaje adquirido en conocimiento (Cualquier Área).
+          </p>
+          <h5>Monotributismo-Cuenta propia</h5>
+          <span>Puesto – 2025 / 2026</span>
+          <p>
+            Mantenimiento y servicios en general, encargado de todas las obras contratando personal capacitado, conocimiento adquiridos en logistica y gestion de tiempo.
+          </p>
+          <h6>OTROS</h6>
+          <p>
+          Atencion al cliente en panaderia (4 meses) --
+          venta de productos variados en internet(tienda online) --
+          experiencia basica en mantenimiento de acensores
+          </p>
+        </div>
+      </div>
+
+      <!-- 2. ESTUDIOS -->
+      <div class="section">
+        <h3>Formación Académica</h3>
+        <div class="item">
+        <h4>Escuela 46- Melo</h4>
+          <span>primaria completa–  2010 / 2017</span>
+          <p>estudios primarios completos (nunca recursando año)</p>
+        <h4>liceo 4 - Melo</h4>
+          <span>bachiller completo biologico– 2018 / 2023</span>
+          <p>estudios secundarios completos (nunca recursando año)</p>
+          <h4>SAINT LEO UNIVRERSITY</h4>
+          <span>Ingenieria informatica – 2024 / 2025</span>
+          <p>ing informatica modaliad online en unviersidad estadoc unidense ( no terminada).</p>
+          <h4>Jovenes a programar</h4>
+          <span>Jovenes a programar Ceibal– 2025 / 2026</span>
+          <p>curso de ceibal  (desarollo web)</p>
+        </div>
+      </div>
+
+      <!-- 3. DATOS PERSONALES -->
+      <div class="section">
+        <h3>Datos Personales</h3>
+        <div class="item">
+          <p>Fecha de nacimiento:08-11-2005</p>
+          <p>Documento:57229398</p>
+          <p>Nacionalidad:uruguaya</p>
+          <p>Estado civil:soltero</p>
+        </div>
+      </div>
+
+      <!-- 4. OTROS -->
+      <div class="section">
+        <h3>Otros Datos</h3>
+        <div class="item">
+          <p>Disponibilidad horaria completa.</p>
+          <p>Ganas de aprender y crecer como persona en la emrpesa</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
